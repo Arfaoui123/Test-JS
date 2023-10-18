@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <h1>Exercice N°2</h1>
+    <script>
+        function SommeNbrPositifs(T) {
+            const somme = T.reduce((acc, nombre) => (nombre > 0 ? acc + nombre : acc), 0);
+            return somme;
+        }
+        var T = [3, -2, 7, 12];
+        var result = SommeNbrPositifs(T)
+        alert('La somme des entiers positifs est: ' + result);
+    </script>
+
+</body>
+
+</html>

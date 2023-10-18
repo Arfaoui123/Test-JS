@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <h1>Exercice N°3</h1>
+    <script>
+        function ChMajus(ch) {
+            var Mots = ch.split(' ');
+            if (Mots.lenght < 2) {
+                return "Format invalide";
+
+            } else {
+                var Majus = Mots.map(Mot => Mot[0].toUpperCase()).join('.');
+                return Majus;
+            }
+        }
+        var ch1 = "Med Arfa";
+        var ch2 = "Arfa Med";
+        var abbrev1 = ChMajus(ch1);
+        var abbrev2 = ChMajus(ch2);
+        alert('ch1:' + ch1 + '  sortie :' + abbrev1 +
+            '\nch2:' + ch2 + ' sortie :' + abbrev2);
+
+
+    </script>
+
+</body>
+
+</html>
